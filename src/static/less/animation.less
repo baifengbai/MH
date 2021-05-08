@@ -1,0 +1,62 @@
+.fade-in {
+    .keyframes(fade-in)
+}
+.fade-in-top {
+    .keyframes(fade-in-top)
+}
+.fade-in-left {
+    .keyframes(fade-in-left)
+}
+.fade-in-big {
+    .keyframes(fade-in-big)
+}
+
+.keyframes(@key, @second: .35s, @function: ease-out, @mode: forwards) {
+    animation-name: @key;
+    animation-duration: @second;
+    animation-timing-function: @function;
+    animation-fill-mode: @mode;
+}
+
+// 淡入显示
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+// 自下向上淡入显示
+@keyframes fade-in-top {
+    0% {
+        opacity: 0;
+        transform : translate(0, 60px);
+    }
+    100% {
+        opacity: 1;
+        transform : translate(0, 0);
+    }
+}
+// 自右向左淡入显示
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        transform : translate(60px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform : translate(0, 0);
+    }
+}
+// 淡入显示放大
+@keyframes fade-in-big {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

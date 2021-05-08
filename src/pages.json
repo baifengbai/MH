@@ -1,0 +1,83 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/shop/shop",
+			"style": {
+				"navigationBarTitleText": "商城",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/find/find",
+			"style": {
+				"navigationBarTitleText": "发现",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/task/task",
+			"style": {
+				"navigationBarTitleText": "任务",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/personal/personal",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#ffffff"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#EA5217",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "/static/images/tab-bar-home.png",
+				"selectedIconPath": "/static/images/tab-bar-home-active.png"
+			},
+			{
+				"pagePath": "pages/shop/shop",
+				"text": "商城",
+				"iconPath": "/static/images/tab-bar-shop.png",
+				"selectedIconPath": "/static/images/tab-bar-shop-active.png"
+			},
+			{
+				"pagePath": "pages/find/find",
+				"text": "发现",
+				"iconPath": "/static/images/tab-bar-find.png",
+				"selectedIconPath": "/static/images/tab-bar-find-active.png"
+			},
+			{
+				"pagePath": "pages/task/task",
+				"text": "任务",
+				"iconPath": "/static/images/tab-bar-task.png",
+				"selectedIconPath": "/static/images/tab-bar-task-active.png"
+			},
+			{
+				"pagePath": "pages/personal/personal",
+				"text": "我的",
+				"iconPath": "/static/images/tab-bar-personal.png",
+				"selectedIconPath": "/static/images/tab-bar-personal-active.png"
+			}
+		]
+	}
+}
